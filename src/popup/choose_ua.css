@@ -40,6 +40,7 @@ h1 { /* "Facebook Container" headline for all panels */
   margin: 0.2em;
   padding: 0.2em;
   font-size: 2.5rem;
+  border: 2px;
   text-align: center;
   background-color: #51cd00;
   cursor: pointer;
@@ -47,4 +48,8 @@ h1 { /* "Facebook Container" headline for all panels */
 
 .ua-choice:hover {
   border: 2px solid #2967da
+}
+
+.selected {
+  border: 2px solid #000000
 }

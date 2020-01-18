@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Mobile Container",
-    "version": "0.0.3",
+    "version": "0.0.5",
 
     "description": "__MSG_extensionDescription__",
 
@@ -28,11 +28,7 @@
 
     "permissions": [
         "<all_urls>",
-        "browsingData",
         "contextualIdentities",
-        "cookies",
-        "management",
-        "storage",
         "tabs",
         "webRequestBlocking",
         "webRequest"

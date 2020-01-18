@@ -20,6 +20,22 @@ function setUA(uaString) {
   USER_AGENT = uaStrings[uaString];
 }
 
+function getselectedUA() {
+  var ret = "firefox";
+  if (uaStrings["Chrome"] == USER_AGENT) {
+    ret = "chrome";
+  }
+  return ret;
+}
+
+function getnotselectedUA() {
+  var ret = "chrome";
+  if (uaStrings["Chrome"] == USER_AGENT) {
+    ret = "firefox";
+  }
+  return ret;
+}
+
 async function setupContainer() {
   // Use existing Mobile container, or create one
 
@@ -76,5 +92,4 @@ async function setup_url_Listener() {
     return;
   }
 
-  //maybeReopenAlreadyOpenTabs();
 })();

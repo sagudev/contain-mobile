@@ -1,3 +1,7 @@
+// get selected
+var backgroundPage = browser.extension.getBackgroundPage();
+document.getElementById(backgroundPage.getselectedUA()).classList.add("selected");
+document.getElementById(backgroundPage.getnotselectedUA()).classList.remove("selected");
 
 /*
 If the user clicks on an element which has the class "ua-choice":
@@ -12,4 +16,6 @@ document.addEventListener("click", (e) => {
   var chosenUa = e.target.textContent;
   var backgroundPage = browser.extension.getBackgroundPage();
   backgroundPage.setUA(chosenUa);
+  document.getElementById(backgroundPage.getselectedUA()).classList.add("selected");
+  document.getElementById(backgroundPage.getnotselectedUA()).classList.remove("selected");
 });
