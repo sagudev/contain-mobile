@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+    "name": "Mobile Container",
+    "version": "0.0.3",
+
+    "description": "__MSG_extensionDescription__",
+
+    "icons": {
+        "48": "/img/icon.svg",
+        "96": "/img/icon.svg"
+    },
+
+    "applications": {
+      "gecko": {
+        "id": "@contain-mobile",
+        "strict_min_version": "67.0"
+      }
+    },
+
+    "homepage_url": "https://github.com/sagudev/contain-mobile",
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "/img/icon.svg",
+        "default_title": "Mobile Container",
+        "default_popup": "popup/choose_ua.html"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "browsingData",
+        "contextualIdentities",
+        "cookies",
+        "management",
+        "storage",
+        "tabs",
+        "webRequestBlocking",
+        "webRequest"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
