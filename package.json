@@ -1,7 +1,7 @@
 {
   "name": "contain-mobile",
-  "version": "2.0.3",
-  "description": "Mobile Container isolates your Mobile activity from the rest of your web activity in order to prevent Mobile from tracking you outside of the Mobile website via third party cookies. ",
+  "version": "0.0.3",
+  "description": "Mobile Container",
   "main": "background.js",
   "scripts": {
     "test": "eslint src test",
